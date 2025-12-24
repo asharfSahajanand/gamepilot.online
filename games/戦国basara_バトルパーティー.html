@@ -702,16 +702,20 @@
 </script>            <script>
                 window.googletag = window.googletag || {cmd: []};
                 googletag.cmd.push(function () {
-                    var responsiveAdSlot = googletag.defineSlot('/23330730517/gamecenter7.com_d3', [[300, 250], [336, 280], [728, 90], [750, 250], [780, 250], [970, 90], [970, 250]], 'div-gpt-ad-1766483079328-0').addService(googletag.pubads());
-                    var mapping =
-                        googletag.sizeMapping()
-                            .addSize([900, 20], [[300, 250], [336, 280]])
-                            .addSize([810, 20], [[780, 250]])
-                            .addSize([780, 20], [[750, 250]])
-                            .addSize([760, 20], [[728, 90]])
-                            .addSize([20, 20], [[300, 250], [336, 280]])
-                            .addSize([0, 0], [])
-                            .build();
+                    var responsiveAdSlot = googletag.defineSlot(
+  '/23330730517/gamecenter7.com_d3',
+  [[300, 250], [336, 280], [728, 90], [750, 250], [780, 250], [970, 90], [970, 250]],
+  'div-gpt-ad-1766483079328-0'
+).addService(googletag.pubads());
+
+                   var mapping = googletag.sizeMapping()
+  .addSize([1380, 20], [[970, 90], [970, 250]])
+  .addSize([1110, 20], [[780, 250]])
+  .addSize([1070, 20], [[750, 250]])
+  .addSize([1050, 20], [[728, 90]])
+  .addSize([20, 20], [[300, 250], [336, 280]])
+  .addSize([0, 0], [])
+  .build();
                     responsiveAdSlot.defineSizeMapping(mapping);
 
                     googletag.pubads().collapseEmptyDivs();
